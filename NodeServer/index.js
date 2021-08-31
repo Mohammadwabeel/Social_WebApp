@@ -7,6 +7,7 @@ const app = express();
 
 const userRoutes = require('./Routes/users');
 const authRoutes = require('./Routes/auth');
+const postRoutes = require('./Routes/posts')
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(morgan("common"));
 
 app.use('/api/users', userRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/posts', postRoutes);
 
 // Routes
 app.get("/", (req, res)=>{
