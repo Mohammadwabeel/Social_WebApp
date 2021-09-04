@@ -5,7 +5,8 @@ export default function TopBar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">Social React</span>
+        <img src="assets/logo.jpg" alt="this is logo" className="logoImg" />
+        <span className="logoText">Social React</span>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
